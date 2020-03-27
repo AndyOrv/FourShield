@@ -28,9 +28,9 @@ class Player{
         vector<Item> inv;
 
         void printInv(){
-         cout << "\nINVENTORY \n";
-           for (int x = 0; x <= inv.size(); x++)
-            cout<< "  " << inv[x].name << endl;
+         cout << "\n\t INVENTORY \n";
+           for (int x = 0; x < inv.size(); x++)
+            cout<< "\t  " << x << "] " << inv[x].name << endl;
         }
 
     };
