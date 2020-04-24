@@ -3,12 +3,28 @@
 #include <stdlib.h>
 #include <vector>
 using namespace std;
+/***
+FOUR SHEILD
+Text Based adventure game
+
+Very Early stages of development,
+All classes and methods are prone to change,
+
+Current version objective is to sort basic fundamental mechanics and layouts for clean progression in development
+Code quality needs refinement
+***/
+
+
+
+
+
+
 
     /***************************************Objects and Characters*********************/
 //Player class
 
-
-class Item{ // basic item characteristics
+// basic item characteristics class
+class Item{
     public:
         int damage;
         string name;
@@ -21,6 +37,7 @@ class Item{ // basic item characteristics
 
 };
 
+//Player class to store methods based on the players interaction with the game
 class Player{
     public:
         char name[50];
@@ -40,12 +57,14 @@ class Player{
 
 
     /******************************************STORY************************************/
+//Header note
 void header(string place){
     cout << "\n----------------------"<< place <<"----------------------" << endl;
 
 }
 
-void contin(){ // End of Page Message
+//Footer note
+void contin(){
     cout << "\n----------------------Press any key to continue----------------------" << endl;
     _getch();
 }
@@ -57,7 +76,7 @@ int choice;
 Player player;
 
 
-//CHOICE 2.1
+//CHOICE 2.1, template for working out how pages will be setup
 void c21(){
 
     system("cls");
